@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CT Ludus Muaythai</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+    }
+    .titulo-topo {
+      font-family: 'Anton', sans-serif;
+    }
+
+    /* Animação do carrossel */
+    @keyframes scroll-left {
+      0% {
+        transform: translateX(0);
+      }
+      100% {
+        transform: translateX(-50%);
+      }
+    }
+
+    #carousel-track {
+      width: max-content;
+      display: flex;
+      gap: 1rem; /* espaço entre imagens */
+      animation: scroll-left 20s linear infinite;
+      will-change: transform;
+    }
+  </style>
+</head>
+<body class="bg-gray-100 text-gray-900">
+ <!-- Cabeçalho -->
+<header class="fixed w-full top-0 z-50 bg-black shadow-md">
+  <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between p-4">
+    
+    <!-- Logo -->
+    <div class="flex items-center space-x-4">
+      <img src="imagens/logo.jpg" alt="Logo CT Ludus" class="h-24 w-auto">
+    </div>
+
+     <!-- Texto Central -->
+  <div class="w-full md:w-auto text-center px-2 mt-2 md:mt-0">
+  <span class="block text-xs sm:text-sm md:text-xl font-bold text-red-600 leading-tight">
+    EXCELÊNCIA E PROFISSIONALISMO<span class="md:hidden"> </span><span class="hidden md:inline"><br></span>NO ENSINO DO MUAYTHAI
+  </span>
+  </div>
+
+
+     <!-- Menu Navegação -->
+    <nav class="hidden md:flex space-x-6 text-sm font-bold text-white mt-4 md:mt-0">
+      <a href="#sobre" class="hover:text-red-500">Sobre</a>
+      <a href="#horarios" class="hover:text-red-500">Horários</a>
+      <a href="#planos" class="hover:text-red-500">Planos</a>
+      <a href="#estrutura" class="hover:text-red-500">Estrutura</a>
+      <a href="#treinador" class="hover:text-red-500">Treinador</a>
+      <a href="#video" class="hover:text-red-500">Vídeo</a>
+      <a href="#contato" class="hover:text-red-500">Contato</a>
+    </nav>
+  </div>
+</header>
+
+
+  <!-- Espaço compensando o cabeçalho fixo -->
+  <div class="h-40"></div>
+
+  <!-- Galeria Carrossel com rolagem infinita -->
+  <section id="carousel" class="py-8 bg-gray-900 overflow-hidden">
+    <div class="max-w-7xl mx-auto px-4">
+      <div id="carousel-track">
+        <img src="imagens/ludus1.jpg" class="h-48 w-auto rounded shadow" alt="Ludus 1">
+        <img src="imagens/ludus2.jpg" class="h-48 w-auto rounded shadow" alt="Ludus 2">
+        <img src="imagens/ludus3.jpg" class="h-48 w-auto rounded shadow" alt="Ludus 3">
+        <img src="imagens/ludus5.jpg" class="h-48 w-auto rounded shadow" alt="Ludus 5">
+        <img src="imagens/ludus11.jpg" class="h-48 w-auto rounded shadow" alt="Ludus 5">
+        <img src="imagens/ludus12.jpg" class="h-48 w-auto rounded shadow" alt="Ludus 5">
+        <img src="imagens/ludus13.jpg" class="h-48 w-auto rounded shadow" alt="Ludus 5">
+        <img src="imagens/ludus14.jpg" class="h-48 w-auto rounded shadow" alt="Ludus 5">
+
+        <!-- Repetição para loop infinito -->
+        <img src="imagens/ludus7.jpg" class="h-48 w-auto rounded shadow" alt="Ludus 1">
+        <img src="imagens/ludus8.jpg" class="h-48 w-auto rounded shadow" alt="Ludus 2">
+        <img src="imagens/ludus9.jpg" class="h-48 w-auto rounded shadow" alt="Ludus 3">
+        <img src="imagens/ludus10.jpg" class="h-48 w-auto rounded shadow" alt="Ludus 5">
+      </div>
+      <div class="text-center mt-6">
+        <a href="https://wa.me/5535987087825" target="_blank"
+          class="bg-red-600 text-white px-3 py-3 text-xl font-bold rounded shadow-lg hover:bg-red-700">
+          Agende uma Aula Experimental
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sobre -->
+  <section id="sobre" class="max-w-5xl mx-auto py-16 px-4">
+    <h2 class="text-3xl font-bold mb-6">Sobre o CT Ludus Muaythai</h2>
+    <p class="text-lg leading-relaxed mb-4">
+      Desde 2014, o CT Ludus Muaythai tem como missão levar qualidade de vida para nossos alunos, focando na saúde física e mental.
+    </p>
+    <p class="text-lg leading-relaxed mb-4">
+      Nossa metodologia abrange todos os níveis, do iniciante ao avançado, em um ambiente acolhedor e respeitoso.
+    </p>
+    <p class="text-lg leading-relaxed mb-4">
+      Nosso professor, ex-lutador com mais de 17 anos de experiência, inclusive na Tailândia — berço do Muaythai —, guia cada treino com técnica e tradição.
+    </p>
+    <p class="text-lg leading-relaxed mb-4">
+      Aqui você encontra acompanhamento personalizado, treinos dinâmicos e um grupo que valoriza disciplina, respeito e evolução constante.
+    </p>
+    <p class="text-lg leading-relaxed">
+      Venha fazer parte da família CT Ludus e transforme sua vida com o Muaythai!
+    </p>
+  </section>
+
+  <!-- Horários -->
+  <section id="horarios" class="bg-white py-16 px-4">
+    <div class="max-w-5xl mx-auto">
+      <h2 class="text-3xl font-bold mb-4">Horários dos Treinos</h2>
+      <p class="text-lg">Coletivo: Segunda a Quinta das 19h às 20h.</p>
+      <p class="text-lg">
+        Personal: A combinar (consulte horários disponíveis). 
+        <span class="text-red-600 font-bold">⚠️ VAGAS LIMITADAS</span>
+      </p>
+    </div>
+  </section>
+
+  <!-- Planos e Preços -->
+  <section id="planos" class="bg-gray-100 py-16 px-4">
+    <div class="max-w-6xl mx-auto">
+      <h2 class="text-3xl font-bold mb-10 text-center">Planos e Preços</h2>
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-6 text-center">
+        <div class="bg-white p-6 rounded-lg shadow hover:shadow-xl transition">
+          <h3 class="text-xl font-bold mb-2">Mensal</h3>
+          <p class="text-3xl text-red-600 font-extrabold">R$130</p>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow hover:shadow-xl transition">
+          <h3 class="text-xl font-bold mb-2">Trimestral</h3>
+          <p class="text-3xl text-red-600 font-extrabold">R$115</p>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow hover:shadow-xl transition">
+          <h3 class="text-xl font-bold mb-2">Semestral</h3>
+          <p class="text-3xl text-red-600 font-extrabold">R$105</p>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow hover:shadow-xl transition">
+          <h3 class="text-xl font-bold mb-2">Anual</h3>
+          <p class="text-3xl text-red-600 font-extrabold">R$95</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Nossa Estrutura -->
+  <section id="estrutura" class="bg-white py-16 px-4">
+    <div class="max-w-6xl mx-auto">
+      <h2 class="text-3xl font-bold mb-10 text-center">Nossa Estrutura</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+        <img src="imagens/fachada.jpg" alt="Foto da estrutura 1" class="w-full h-64 object-cover rounded-lg shadow hover:scale-105 transition-transform duration-300">
+        <img src="imagens/academia1.jpg" alt="Foto da estrutura 2" class="w-full h-64 object-cover rounded-lg shadow hover:scale-105 transition-transform duration-300">
+        <img src="imagens/academia2.jpg" alt="Foto da estrutura 3" class="w-full h-64 object-cover rounded-lg shadow hover:scale-105 transition-transform duration-300">
+        <img src="imagens/ringue.jpg" alt="Foto da estrutura 4" class="w-full h-64 object-cover rounded-lg shadow hover:scale-105 transition-transform duration-300">
+        <img src="imagens/tigre.jpg" alt="Foto da estrutura 5" class="w-full h-64 object-cover rounded-lg shadow hover:scale-105 transition-transform duration-300">
+        <img src="imagens/academia6.jpg" alt="Foto da estrutura 6" class="w-full h-64 object-cover rounded-lg shadow hover:scale-105 transition-transform duration-300">
+      </div>
+    </div>
+  </section>
+
+  <!-- Treinador Juliano Nascimento na Tailândia -->
+  <section id="treinador" class="bg-gray-100 py-16 px-4">
+    <div class="max-w-6xl mx-auto">
+      <h2 class="text-3xl font-bold mb-10 text-center">Treinador Juliano Nascimento na Tailândia</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+        <img src="imagens/tailandia0.jpg" alt="Juliano na Tailândia 1" class="w-full h-64 object-cover rounded-lg shadow hover:scale-105 transition duration-300">
+        <img src="imagens/tailandia1.jpg" alt="Juliano na Tailândia 2" class="w-full h-64 object-cover rounded-lg shadow hover:scale-105 transition duration-300">
+        <img src="imagens/tailandia2.jpg" alt="Juliano na Tailândia 3" class="w-full h-64 object-cover rounded-lg shadow hover:scale-105 transition duration-300">
+        <img src="imagens/tailandia3.jpg" alt="Juliano na Tailândia 3" class="w-full h-64 object-cover rounded-lg shadow hover:scale-105 transition duration-300">
+        <img src="imagens/tailandia4.jpg" alt="Juliano na Tailândia 3" class="w-full h-64 object-cover rounded-lg shadow hover:scale-105 transition duration-300">
+        <img src="imagens/tailandia5.jpg" alt="Juliano na Tailândia 3" class="w-full h-64 object-cover rounded-lg shadow hover:scale-105 transition duration-300">
+        <img src="imagens/tailandia6.jpg"alt="Juliano na Tailândia 3" class="w-full h-64 object-cover rounded-lg shadow hover:scale-105 transition duration-300">
+        <img src="imagens/tailandia7.jpg" alt="Juliano na Tailândia 3" class="w-full h-64 object-cover rounded-lg shadow hover:scale-105 transition duration-300">
+        <img src="imagens/tai.jpg" alt="Juliano na Tailândia 3" class="w-full h-64 object-cover rounded-lg shadow hover:scale-105 transition duration-300">
+
+      </div>
+    </div>
+  </section>
+  <!-- Lutas de Muaythai e MMA -->
+  <section id="treinador" class="bg-gray-100 py-16 px-4">
+    <div class="max-w-6xl mx-auto">
+      <h2 class="text-3xl font-bold mb-10 text-center">Lutas de Muaythai e MMA</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+        <img src="imagens/luta0.jpg" alt="Juliano na Tailândia 1" class="w-full h-64 object-cover rounded-lg shadow hover:scale-105 transition duration-300">
+        <img src="imagens/luta1.jpg" alt="Juliano na Tailândia 2" class="w-full h-64 object-cover rounded-lg shadow hover:scale-105 transition duration-300">
+        <img src="imagens/luta2.jpg" alt="Juliano na Tailândia 3" class="w-full h-64 object-cover rounded-lg shadow hover:scale-105 transition duration-300">
+        <img src="imagens/luta3.jpg" alt="Juliano na Tailândia 3" class="w-full h-64 object-cover rounded-lg shadow hover:scale-105 transition duration-300">
+        <img src="imagens/campeao.jpg" alt="Juliano na Tailândia 3" class="w-full h-64 object-cover rounded-lg shadow hover:scale-105 transition duration-300">
+        <img src="imagens/campeao1.jpg" alt="Juliano na Tailândia 3" class="w-full h-64 object-cover rounded-lg shadow hover:scale-105 transition duration-300">
+        <img src="imagens/campeao2.jpg"alt="Juliano na Tailândia 3" class="w-full h-64 object-cover rounded-lg shadow hover:scale-105 transition duration-300">
+        <img src="imagens/luta4.jpg" alt="Juliano na Tailândia 3" class="w-full h-64 object-cover rounded-lg shadow hover:scale-105 transition duration-300">
+        <img src="imagens/luta5.jpg" alt="Juliano na Tailândia 3" class="w-full h-64 object-cover rounded-lg shadow hover:scale-105 transition duration-300">
+        <img src="imagens/muaythai1.jpg" alt="Juliano na Tailândia 3" class="w-full h-64 object-cover rounded-lg shadow hover:scale-105 transition duration-300">
+        <img src="imagens/muaythai2.jpg" alt="Juliano na Tailândia 3" class="w-full h-64 object-cover rounded-lg shadow hover:scale-105 transition duration-300">
+        <img src="imagens/muaythai3.jpg" alt="Juliano na Tailândia 3" class="w-full h-64 object-cover rounded-lg shadow hover:scale-105 transition duration-300">
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Vídeo -->
+  <section id="video" class="bg-white py-16 px-4">
+    <div class="max-w-5xl mx-auto text-center">
+      <h2 class="text-3xl font-bold mb-6">Conheça o CT Ludus em Vídeo</h2>
+      <p class="text-lg mb-6">Veja um pouco da nossa estrutura, treinos e energia da família CT Ludus!</p>
+      <div class="aspect-w-16 aspect-h-9">
+        <iframe class="w-full h-96 rounded shadow-lg"
+          src="https://www.youtube.com/embed/SEU_VIDEO_ID"
+          title="CT Ludus Muaythai"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen>
+        </iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contato -->
+  <section id="contato" class="py-16 px-4">
+    <div class="max-w-5xl mx-auto">
+      <h2 class="text-3xl font-bold mb-4">Contato</h2>
+      <p class="text-lg mb-4">WhatsApp: <a href="https://wa.me/5535987087825" class="text-red-600 font-bold">(35) 98708-7825</a></p>
+      <iframe class="w-full h-64 rounded shadow" frameborder="0" style="border:0"
+        src="https://www.google.com/maps?q=Rua+juca+castelo,+681,+bairro+maristela,+santa+rita+do+sapuca%C3%AD+mg&output=embed"
+        allowfullscreen></iframe>
+    </div>
+  </section>
+
+  <!-- Rodapé -->
+  <footer class="bg-black text-white py-6">
+    <div class="max-w-7xl mx-auto px-4 flex flex-col md:flex-row items-center justify-between">
+      <p>&copy; 2025 CT Ludus Muaythai. Todos os direitos reservados.</p>
+      <a href="https://instagram.com/CTLudus" target="_blank" class="flex items-center space-x-2 mt-4 md:mt-0">
+        <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram" class="w-6 h-6">
+        <span>@CTLudus</span>
+      </a>
+    </div>
+  </footer>
+</body>
+</html>
